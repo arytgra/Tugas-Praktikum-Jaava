@@ -1,0 +1,30 @@
+<html>
+    <head>
+        <title>Luas Persegi</title>
+    </head>
+    <body>
+        <script language="javascript">
+            function luaspersegipanjang()
+            {
+                var panjang = parseFloat(document.funday.nilai_panjang.value);
+                if(isNaN(panjang)){
+                    panjang=0.0;}
+                var lebar = parseFloat(document.funday.nilai_lebar.value);
+                if(isNanN(lebar)){
+                    lebar=0.0}
+                var hasil = panjang*lebar;
+                alert("Jadi, luas persegi panjang adalah : "+ hasil); 
+            }
+        </script>
+        <form name="funday">
+            <pre>
+                Nilai Panjang = <input type="text" name="nilai_panjang"/>
+            </pre>
+            <pre>
+                Nilai Lebar = <input type="text" name="nilai_lebar"/>
+            </pre>
+            <input type="button" value="Hitung Sekarang" onclick="luaspersegipanjang()"/>
+            <input type="reset" value="Reset"/> 
+        </form>
+    </body>
+</html>
